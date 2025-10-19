@@ -1,8 +1,8 @@
-# Starwars films API
+## Starwars films API
 
 A Django REST API for managing Star Wars films and user comments, with data sourced from SWAPI.
 
-# Features
+## Features
 
 - get list of Star Wars films sorted by release date
 - View detailed information about each film
@@ -11,9 +11,9 @@ A Django REST API for managing Star Wars films and user comments, with data sour
 - Automatic data sync from SWAPI
 - interactive API documentation (swagger UI)
 
-# API Endpoints
+## API Endpoints
 
-# Films
+## Films
 - `GET /api/films/` - List all films with comment counts
 - `GET /api/films/{id}/` - Get detailed film information
 - `POST /api/films/sync/` - Sync films from SWAPI
@@ -58,7 +58,7 @@ python manage.py shell
 python manage.py runserver
 ```
 
-# API Documentation
+## API Documentation
 
 Visit `/api/docs/` for interactive swagger DOcumentation
 
@@ -66,6 +66,6 @@ Visit `/api/docs/` for interactive swagger DOcumentation
 
 Deployed on Heroku with continuous deployment from github
 
-# Author 
+## Author
 
 Wale Johnson
