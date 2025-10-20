@@ -1,3 +1,4 @@
+import traceback
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
 from rest_framework.response import Response
@@ -8,6 +9,7 @@ from drf_spectacular.utils import extend_schema, extend_schema_view
 from .models import Film, Comment
 from .serializers import FilmListSerializer, FilmDetailSerializer, CommentSerializer
 from .swapi_service import SWAPIService
+
 
 
 class StandardResultsSetPagination(PageNumberPagination):

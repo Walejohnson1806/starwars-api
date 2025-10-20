@@ -4,18 +4,7 @@ from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('films.urls')),  # This adds /api/ prefix
-    
-    # API Documentation
+    path('api/', include('films.urls')),
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
     path('api/docs/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
-]
-from django.http import HttpResponse
-
-def home(request):
-    return HttpResponse("Welcome to the Star Wars API 🌌")
-
-urlpatterns = [
-    # your other urls...
-    path("", home),
 ]
